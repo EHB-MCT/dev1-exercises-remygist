@@ -10,8 +10,6 @@ let margin = 150;
 
 drawLines();
 
-
-
 function drawLines(){
     context.beginPath();
     context.moveTo(margin, 50);
