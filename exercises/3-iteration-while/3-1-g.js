@@ -10,7 +10,6 @@ function draw() {
     context.fillStyle = "#3498DB";
     context.fillRect(50, 50, 300, 300);
     drawConcentricCircles();
-    console.log(Utils);
 }
 
 function drawConcentricCircles() {
@@ -21,8 +20,7 @@ function drawConcentricCircles() {
         //Add it to the utils script:
         //The function draws the stroke of a circle 
         //and has the following parameters: x,y,radius
-        Utils.strokeCircle(200,200,15+(margin*i));
-        console.log(i);
+        Utils.strokeCircle(200, 200, 15 + (margin * i));
         i++;
     }
 }
