@@ -18,11 +18,10 @@ function draw() {
 function drawBubbles() {
     for (let i = 0; i < 50; i++) {
         Utils.fillCircle(Utils.randomInt(margin, width - 200), Utils.randomInt(margin, height - 200), Utils.randomInt(10,75));
-        context.fillStyle = Utils.rgba(Math.floor(Math.random() * 255 + 1), Math.floor(Math.random() * 255 + 1), Math.floor(Math.random() * 255 + 1), Math.random());
+        context.fillStyle = Utils.hsla(Math.random() * 360, Math.random() * 100, Math.random() * 100, Math.random());
     }
 
 
 
 }
 
-rrr
