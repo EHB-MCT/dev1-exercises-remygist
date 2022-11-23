@@ -26,7 +26,7 @@ function draw() {
 
     drawLanes();
     for (let i = 0; i < 5; i++) {
-        speed = Utils.randomInt(0, 1);
+        speed = Utils.randomInt(0, 15);
         drawSnail((space / 2) + positions[i], (space / 2) + space * i, space, 1 + i);
         positions[i] += speed;
         console.log(positions);
@@ -42,8 +42,9 @@ function draw() {
     if (!gameover) {
         requestAnimationFrame(draw);
     } else {
-        context.font = "30px Arial";
-        context.fillText("Slak " + winnaar + " is de Winnaar", 150, 50);
+        context.font = "80px Arial";
+        context.fillStyle = "red";
+        context.fillText("Slak " + winnaar + " is de Winnaar!!!", width/2, height/5 * winnaar - 50);
     }
 
 }
