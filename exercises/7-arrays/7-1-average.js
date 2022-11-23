@@ -2,26 +2,34 @@
 import context from "../../scripts/context.js";
 import * as Utils from "../../scripts/utils.js";
 
-calcAverage();
+createList();
 
-function calcAverage(){
+
+function createList(){
     let numbers = [];
-    let sum = 0;
     //1000 random getalllen maken
     for (let i = 0; i < 1000; i++) {
         let rand = Utils.randomInt(0,100);
         numbers.push(rand);
-        
     }
-
-    for (let j = 0; j < numbers.length; j++) {
-        sum += numbers[j];
-    }
-
-    let avg = sum/numbers.length;
     
-console.log(numbers);
-console.log(sum);
-console.log(avg);
+    console.log(calcAverage(numbers));
+
+
+
+}
+
+function calcAverage(List){
+    
+    let sum = 0;
+    
+    for (let j = 0; j < List.length; j++) {
+        sum += List[j];
+    }
+
+    let avg = sum/List.length;
+    return avg;
+    
+
     
 }
