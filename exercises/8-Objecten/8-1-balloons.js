@@ -15,7 +15,7 @@ function setup() {
 	for (let i = 0; i < 100; i++) {
 		let balloon = {
 			x: Utils.randomInt(0, width),
-			y: Utils.randomInt(height / 2, height),
+			y:  height + 250,
 			radius: 50,
 			speedY: Utils.randomInt(1, 10),
             hue: Utils.randomInt(0,60),
